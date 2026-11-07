@@ -44,14 +44,14 @@ jobs:
               deployed_sha=$(curl --fail --silent --show-error --location \
                 --connect-timeout 5 --max-time 20 \
                 -H 'Cache-Control: no-cache' \
-                "https://daimaoblog.com/deploy-sha.txt?cb=${cache_bust}" || true)
+                "https://daimao.blog/deploy-sha.txt?cb=${cache_bust}" || true)
             fi
 
             if [ -z "$EXPECTED_SHA" ] || [ "$deployed_sha" = "$EXPECTED_SHA" ] || [ "$deployed_sha" = "latest" ] || [ -z "$deployed_sha" ]; then
               if curl --fail --silent --show-error --location \
                 --connect-timeout 5 --max-time 20 \
                 -H 'Cache-Control: no-cache' \
-                "https://daimaoblog.com/sitemap.xml?cb=${cache_bust}" \
+                "https://daimao.blog/sitemap.xml?cb=${cache_bust}" \
                 --output sitemap.xml; then
                 if ! grep -oE '<loc>[^<]+</loc>' sitemap.xml \
                   | sed -E 's#</?loc>##g' > sitemap-urls.txt; then
@@ -59,7 +59,7 @@ jobs:
                 fi
 
                 if test -s sitemap-urls.txt \
-                  && awk '$0 !~ /^https:\/\/daimaoblog.com\// { exit 1 }' sitemap-urls.txt; then
+                  && awk '$0 !~ /^https:\/\/daimao.blog\// { exit 1 }' sitemap-urls.txt; then
                   sort -u sitemap-urls.txt -o sitemap-urls.txt
                   echo "Verified deployment ${deployed_sha:-sitemap-verified}; found $(wc -l < sitemap-urls.txt) Sitemap URLs."
                   break
@@ -98,11 +98,11 @@ jobs:
             esac
 
             submit_redirect=true
-            if ! grep -Fxq "https://daimaoblog.com${target}" sitemap-urls.txt; then
+            if ! grep -Fxq "https://daimao.blog${target}" sitemap-urls.txt; then
               target_html=$(mktemp)
               if ! curl --fail --silent --show-error --location \
                 --connect-timeout 5 --max-time 20 \
-                "https://daimaoblog.com${target}" --output "$target_html"; then
+                "https://daimao.blog${target}" --output "$target_html"; then
                 rm -f "$target_html"
                 echo "Redirect target is neither in the Sitemap nor reachable: $target"
                 exit 1
@@ -122,7 +122,7 @@ jobs:
             actual_status=$(curl --silent --show-error \
               --dump-header "$redirect_headers" --output /dev/null \
               --connect-timeout 5 --max-time 20 --max-redirs 0 \
-              --write-out '%{http_code}' "https://daimaoblog.com${source}")
+              --write-out '%{http_code}' "https://daimao.blog${source}")
             actual_location=$(awk 'tolower($1) == "location:" { gsub(/\r/, "", $2); print $2; exit }' "$redirect_headers")
             rm -f "$redirect_headers"
 
@@ -131,13 +131,13 @@ jobs:
               exit 1
             fi
 
-            if [ "$actual_location" != "$target" ] && [ "$actual_location" != "https://daimaoblog.com${target}" ]; then
+            if [ "$actual_location" != "$target" ] && [ "$actual_location" != "https://daimao.blog${target}" ]; then
               echo "Expected $source to redirect to $target, received ${actual_location:-no Location header}."
               exit 1
             fi
 
             if [ "$submit_redirect" = true ]; then
-              printf 'https://daimaoblog.com%s\n' "$source" >> extra-urls.txt
+              printf 'https://daimao.blog%s\n' "$source" >> extra-urls.txt
             else
               echo "Validated redirect to noindex target outside Sitemap: $source -> $target"
             fi
@@ -149,9 +149,9 @@ jobs:
             fi
 
             case "$deleted_url" in
-              https://daimaoblog.com/*) ;;
+              https://daimao.blog/*) ;;
               *)
-                echo "Deleted URL must belong to https://daimaoblog.com/: $deleted_url"
+                echo "Deleted URL must belong to https://daimao.blog/: $deleted_url"
                 exit 1
                 ;;
             esac
@@ -186,9 +186,9 @@ jobs:
           esac
           urls=$(jq -R . < urls.txt | jq -s .)
           payload=$(jq -n \
-            --arg host "daimaoblog.com" \
+            --arg host "daimao.blog" \
             --arg key "$INDEXNOW_KEY" \
-            --arg keyLocation "https://daimaoblog.com/${INDEXNOW_KEY}.txt" \
+            --arg keyLocation "https://daimao.blog/${INDEXNOW_KEY}.txt" \
             --argjson urlList "$urls" \
             '{ host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList }')
           echo "Submitting to Yandex IndexNow gateway..."

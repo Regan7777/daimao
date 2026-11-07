@@ -11,6 +11,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "build": "pnpm run docs:build",
     "docs:build": "node scripts/generate-affiliate-redirects.mjs && vuepress build docs --clean-cache --clean-temp",
     "docs:affiliates": "node scripts/generate-affiliate-redirects.mjs",
     "docs:covers": "node scripts/generate-page-covers.mjs",

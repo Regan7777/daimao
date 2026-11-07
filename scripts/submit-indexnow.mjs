@@ -6,7 +6,7 @@ import path from 'node:path'
  * 用法: node scripts/submit-indexnow.mjs
  */
 
-const HOST = 'daimaoblog.com'
+const HOST = 'daimao.blog'
 const KEY = '7ec54bed5e684bee9e50ea059b0e5538'
 const SITEMAP_URL = `https://${HOST}/sitemap.xml`
 

@@ -13,7 +13,7 @@ tags:
 description: ChatGPT、Claude、Gemini 用什么节点？2026 AI工具机场节点选购指南：深度分析美国、日本、新加坡、英国等支持地区的节点差异，详解原生住宅IP与数据中心IP对AI风控的影响，提供科学配置分流规则与防止封号的实用技巧。
 schema:
   - "@type": HowTo
-    "@id": "https://daimaoblog.com/posts/ai-tools-node-guide-2026/#howto"
+    "@id": "https://daimao.blog/posts/ai-tools-node-guide-2026/#howto"
     name: AI工具官方规则与连接故障排查流程
     step:
       - "@type": HowToStep

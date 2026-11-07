@@ -55,7 +55,7 @@ test('airport sharing uses a dedicated wide cover without changing the original 
   const head = resolveHead(page)
   const social = Object.fromEntries(head.filter(([tag, attrs]) => tag === 'meta' && attrs.property)
     .map(([, attrs]) => [attrs.property, attrs.content]))
-  assert.equal(social['og:image'], 'https://daimaoblog.com/covers/posts-shenxingjiasu-review-2026.png')
+  assert.equal(social['og:image'], 'https://daimao.blog/covers/posts-shenxingjiasu-review-2026.png')
   assert.equal(social['og:image:width'], '1280')
   assert.equal(social['og:image:height'], '720')
   const { airportData } = loadConfig(join(configDir, 'airports.ts'))

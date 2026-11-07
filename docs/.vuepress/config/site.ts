@@ -1,7 +1,7 @@
 import { airportData, airportDataLastModified, airportDataLastReviewed, airportMetrics } from './airports'
 import { pageCovers } from './page-covers'
 
-export const hostname = 'https://daimaoblog.com'
+export const hostname = 'https://daimao.blog'
 export const siteName = '呆毛'
 export const siteDescription = '呆毛 专注2026翻墙机场推荐、科学上网教程与客户端配置指南。提供低价与不限时机场对比、Clash/v2rayN/小火箭节点配置、流媒体与ChatGPT解锁方案及跑路风险实时监测，帮助用户安全稳定选购。'
 export const siteKeywords = '呆毛,呆毛博客,机场推荐,VPN推荐,Clash节点,Clash教程,Shadowrocket,科学上网,翻墙机场,ChatGPT机场,TikTok节点,流媒体解锁'

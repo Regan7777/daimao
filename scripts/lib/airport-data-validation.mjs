@@ -68,7 +68,7 @@ const normalizeSourceUrl = (value) => {
 const clients = (airport) => [airport.dedicatedClient && '专属客户端', airport.universalSubscription && '通用订阅']
   .filter(Boolean).join('、') || '无专属客户端'
 
-export const validateAirportRows = (rows, airports, context, { sectionLinks = false, hostname = 'https://daimaoblog.com', requiredColumns = [] } = {}) => {
+export const validateAirportRows = (rows, airports, context, { sectionLinks = false, hostname = 'https://daimao.blog', requiredColumns = [] } = {}) => {
   const errors = []
   if (!Array.isArray(rows)) return [`${context}: missing table`]
   for (const column of requiredColumns) {
@@ -116,7 +116,7 @@ export const validateAirportRows = (rows, airports, context, { sectionLinks = fa
   return errors
 }
 
-export const validateItemList = (schema, airports, context, hostname = 'https://daimaoblog.com', ordered = false) => {
+export const validateItemList = (schema, airports, context, hostname = 'https://daimao.blog', ordered = false) => {
   if (!schema) return [`${context}: missing ItemList`]
   const expected = airports.map((airport, index) => ({ name: airport.name, path: airport.path, position: index + 1 }))
   const actual = (schema.itemListElement || []).map((entry) => ({ name: entry.item?.name, path: entry.item?.url?.replace(/^https?:\/\/[^/]+/, ''), position: entry.position }))

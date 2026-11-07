@@ -132,7 +132,7 @@ test('finite-duration packages stay excluded from no-expiry summaries and export
   const noExpiryList = noExpirySchema['@graph'].find((item) => item['@type'] === 'ItemList')
   assert.equal(noExpiryList.numberOfItems, 6)
   assert.equal(noExpiryList.itemListElement.some((entry) => entry.item.name === '榴莲云'), false)
-  assert.equal(noExpiryList.itemListElement.some((entry) => entry.item.url === `https://daimaoblog.com${liulianyun.path}`), false)
+  assert.equal(noExpiryList.itemListElement.some((entry) => entry.item.url === `https://daimao.blog${liulianyun.path}`), false)
   assert.equal(data.lastModified, airportDataLastModified)
   assert.equal(data.lastReviewed, airportDataLastReviewed)
   assert.match(airportDataLastModified, /^\d{4}-\d{2}-\d{2}$/)

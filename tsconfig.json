@@ -11,7 +11,7 @@
       "node"
     ]
   },
-  // TypeScript configuration for daimaoblog.com
+  // TypeScript configuration for daimao.blog
   "include": [
     "docs/.vuepress/**/*.ts"
   ]

@@ -8,7 +8,7 @@ const root = process.cwd()
 const docsDir = join(root, 'docs')
 const publicDir = join(root, 'docs/.vuepress/public')
 const distDir = join(root, 'docs/.vuepress/dist')
-const hostname = 'https://daimaoblog.com'
+const hostname = 'https://daimao.blog'
 
 const errors = []
 if (existsSync(join(publicDir, 'llms.txt'))) {

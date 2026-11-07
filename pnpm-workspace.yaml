@@ -6,7 +6,7 @@ overrides:
 allowBuilds:
   esbuild: true
   highlight.js: true
-# daimaoblog (https://daimaoblog.com) workspace configuration
+# daimaoblog (https://daimao.blog) workspace configuration
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild

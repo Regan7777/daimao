@@ -23,7 +23,7 @@ export function generateAffiliateRedirects() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>正在前往 ${item.name} 官网...</title>
   <meta name="description" content="正在安全前往 ${item.name} 官网，请稍候...">
-  <link rel="canonical" href="https://daimaoblog.com/go/${item.slug}/">
+  <link rel="canonical" href="https://daimao.blog/go/${item.slug}/">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta http-equiv="refresh" content="0; url=${item.target}">
   <style>

@@ -2,7 +2,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, relative, resolve, sep } from 'node:path'
 
 const dist = resolve('docs/.vuepress/dist')
-const origin = 'https://daimaoblog.com'
+const origin = 'https://daimao.blog'
 const walk = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
   const path = join(dir, entry.name)
   return entry.isDirectory() ? walk(path) : entry.name.endsWith('.html') ? [path] : []

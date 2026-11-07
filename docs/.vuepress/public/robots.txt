@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /go/
 
-Sitemap: https://daimaoblog.com/sitemap.xml
+Sitemap: https://daimao.blog/sitemap.xml
