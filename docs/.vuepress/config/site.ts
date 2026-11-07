@@ -1,0 +1,39 @@
+import { airportData, airportDataLastModified, airportDataLastReviewed, airportMetrics } from './airports'
+import { pageCovers } from './page-covers'
+
+export const hostname = 'https://daimaoblog.com'
+export const siteName = '呆毛'
+export const siteDescription = '呆毛 专注2026翻墙机场推荐、科学上网教程与客户端配置指南。提供低价与不限时机场对比、Clash/v2rayN/小火箭节点配置、流媒体与ChatGPT解锁方案及跑路风险实时监测，帮助用户安全稳定选购。'
+export const siteKeywords = '呆毛,呆毛博客,机场推荐,VPN推荐,Clash节点,Clash教程,Shadowrocket,科学上网,翻墙机场,ChatGPT机场,TikTok节点,流媒体解锁'
+export const siteLastReviewed = airportDataLastReviewed
+export const siteLastModified = airportDataLastModified
+export const siteAuthorName = '呆毛'
+export const siteAuthorDescription = '呆毛 推荐内容维护者，长期整理机场推荐、套餐与客户端资料、Clash 配置、科学上网教程和购买风险提示。'
+export const siteAuthorUrl = `${hostname}/about/`
+export const sitePublishingPrinciplesUrl = `${hostname}/about/#编辑原则`
+export const siteContactUrl = `${hostname}/about/`
+export const monitoredAirportCount = airportMetrics.count
+export const defaultImage = `${hostname}/logo.png`
+export const defaultRobots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
+
+const airportPageImages = Object.fromEntries(
+  airportData.map((airport) => [airport.path, airport.image]),
+)
+
+export const pageImages: Record<string, string> = {
+  '/': '/logo.png',
+  '/blog/': '/shouye.png',
+  '/about/': '/shouye.png',
+  '/posts/jichang-tuijian/': '/shouye.png',
+  '/posts/jichang-heji/': '/shouye.png',
+  ...airportPageImages,
+  '/posts/clash-verge-guide-2026/': '/clashVerge4.png',
+  '/posts/clash-for-android-guide-2026/': '/clashMeta1.png',
+  '/rankings/cheap/': '/shouye.png',
+  '/rankings/clash/': '/clashVerge4.png',
+  '/rankings/chatgpt/': '/shouye.png',
+  '/risk-monitor/': '/shouye.png',
+  // Sharing covers are independent of the logos and historical screenshots
+  // used in article bodies and public airport data.
+  ...pageCovers,
+}

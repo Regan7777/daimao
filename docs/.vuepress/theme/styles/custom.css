@@ -1,0 +1,204 @@
+:root {
+  /** 呆毛 DaiMao Cyber Amber 极客金曜主题配色 */
+  --vp-c-brand-1: #d97706;
+  --vp-c-brand-2: #f59e0b;
+  --vp-c-brand-3: #b45309;
+  --vp-c-brand-soft: rgba(245, 158, 11, 0.12);
+
+  /** 呆毛专属特色变量 */
+  --dm-accent-gold: #f59e0b;
+  --dm-accent-purple: #8b5cf6;
+  --dm-glow: rgba(245, 158, 11, 0.25);
+  --dm-card-border: rgba(245, 158, 11, 0.18);
+}
+
+/** 深色模式 - 呆毛黑曜石与赛博金紫微光 */
+[data-theme="dark"] {
+  --vp-c-brand-1: #fbbf24;
+  --vp-c-brand-2: #f59e0b;
+  --vp-c-brand-3: #fde68a;
+  --vp-c-brand-soft: rgba(251, 191, 36, 0.16);
+
+  --vp-c-bg: #090a10;
+  --vp-c-bg-alt: #0f111a;
+  --vp-c-bg-elv: #141724;
+  --vp-c-bg-soft: #161928;
+
+  --dm-accent-gold: #fbbf24;
+  --dm-accent-purple: #a855f7;
+  --dm-glow: rgba(251, 191, 36, 0.3);
+  --dm-card-border: rgba(251, 191, 36, 0.2);
+}
+
+/* 页面背景微光流转氛围 */
+[data-theme="dark"] body {
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(245, 158, 11, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* 顶部导航栏高质感毛玻璃 */
+.vp-navbar {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+}
+
+/* 导航栏 Brand 字体加粗与光泽 */
+.vp-navbar-title {
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+}
+
+/* 机场大全优先展示价格总表 */
+.airport-catalogue .vp-doc-meta {
+  display: none;
+}
+
+.airport-catalogue .vp-doc #机场价格总表 {
+  padding-top: 0;
+  margin-top: 16px;
+  border-top: 0;
+}
+
+/* 全局表格优雅排版：100% 满宽均匀自适应展开，彻底解决右侧空白与内容收缩问题 */
+.vp-doc table:not(.recommendation-comparison table) {
+  display: table !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  table-layout: auto !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid var(--dm-card-border, var(--vp-c-divider));
+  border-radius: 12px;
+  background-color: var(--vp-c-bg-alt);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin: 1.5rem 0 !important;
+  overflow: hidden;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-elv);
+  color: var(--vp-c-text-1);
+  font-weight: 700;
+  border-bottom: 2px solid #f59e0b;
+  border-right: 1px solid var(--vp-c-divider);
+  padding: 12px 18px;
+  font-size: 14px;
+}
+
+.vp-doc th:last-child {
+  border-right: none;
+}
+
+.vp-doc td {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  border-right: 1px solid var(--vp-c-divider);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.vp-doc td:last-child {
+  border-right: none;
+}
+
+.vp-doc tr:last-child td {
+  border-bottom: none;
+}
+
+.vp-doc tr:hover td {
+  background-color: rgba(245, 158, 11, 0.04);
+}
+
+/* 提示卡片增强与圆角 */
+.vp-doc .custom-container {
+  border-radius: 12px;
+  border-left-width: 4px;
+}
+
+/* 徽章 Badge 样式升级 */
+.vp-badge {
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+.vp-badge.tip {
+  background: rgba(245, 158, 11, 0.15) !important;
+  color: #f59e0b !important;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* 代码块高亮边框 */
+.vp-doc div[class*="language-"] {
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* 按钮高亮与悬浮发光微动效 */
+.vp-button.brand {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2)) !important;
+  color: #000 !important;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px var(--dm-glow);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vp-button.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px var(--dm-glow);
+}
+
+/* 隐藏导航栏右上角社交链接图标 */
+.vp-navbar .vp-social-links,
+.vp-navbar-social-links {
+  display: none !important;
+}
+
+/* 全栈彻底清除所有箭头、外链小图标、伪元素箭头与指示器 */
+*, *::before, *::after {
+  --vp-icon-arrow-right: none !important;
+  --vp-external-link-icon: none !important;
+}
+
+.vpi-external-link,
+[class*="vpi-external-link"],
+.vp-external-link-icon,
+[class*="external-link-icon"],
+.external-link-icon,
+[class*="vpi-arrow"],
+[class*="vpi-chevron-right"],
+a .vpi-external-link,
+a .vp-external-link-icon,
+a svg[class*="external"],
+a [class*="vpi-"],
+a::after,
+a::before,
+.btn-primary::after,
+.btn-primary::before,
+.btn-ghost::after,
+.btn-ghost::before,
+.scenario-card::after,
+.scenario-card::before,
+.vp-link .vpi-external-link,
+.vp-doc a::after,
+.vp-doc a::before,
+:is(.vp-external-link-icon, .vp-doc a[href*="://"], .vp-doc a[target="_blank"]):not(.show-icon)::after,
+a[target="_blank"]::after,
+a[href*="://"]::after {
+  display: none !important;
+  content: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+  background: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+

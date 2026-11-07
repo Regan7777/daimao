@@ -1,0 +1,80 @@
+import { fileURLToPath } from 'node:url'
+import { defineUserConfig } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import {
+  generateAirportDataFiles,
+  patchGeneratedHtml,
+} from './config/generated'
+import { extendSponsoredMarkdown } from './config/markdown'
+import { extendPageWithSeo } from './config/page-seo'
+import { defaultRobots, siteDescription, siteName } from './config/site'
+import { theme } from './config/theme'
+
+// Plume uses H2 for every feature card; keep H2 for homepage sections and H3 for cards.
+const homeFeatureComponent = fileURLToPath(new URL('./theme/components/VPHomeFeature.vue', import.meta.url))
+const blogHeadingComponent = fileURLToPath(new URL('./theme/components/VPBlogWithHeading.vue', import.meta.url))
+const navBarTitleComponent = fileURLToPath(new URL('./theme/components/VPNavBarTitle.vue', import.meta.url))
+
+export default defineUserConfig({
+  lang: 'zh-CN',
+  title: siteName,
+  description: siteDescription,
+  head: [
+    ['meta', { name: 'google', content: 'notranslate' }],
+    ['meta', { httpEquiv: 'Content-Language', content: 'zh-CN' }],
+    ['meta', { name: 'author', content: '呆毛' }],
+    ['meta', { name: 'theme-color', content: '#141518' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg?v=2' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png?v=2' }],
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico?v=2' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logo.png?v=2' }],
+  ],
+  plugins: [
+    {
+      name: 'yinli-link-rel',
+      extendsMarkdownOptions: (options: any) => {
+        options.links ||= {}
+        options.links.externalAttrs = {
+          ...(options.links.externalAttrs || {}),
+          target: '_blank',
+          rel: 'nofollow noopener noreferrer',
+        }
+      },
+    },
+    {
+      name: 'yinli-generated-html-cleanup',
+      onGenerated: (app: any) => {
+        patchGeneratedHtml(app)
+        generateAirportDataFiles(app)
+      },
+    },
+  ],
+  extendsPage: extendPageWithSeo,
+  extendsMarkdown: extendSponsoredMarkdown,
+  shouldPrefetch: false,
+  theme,
+  bundler: viteBundler({
+    viteOptions: {
+      plugins: [
+        {
+          name: 'force-zh-lang',
+          transformIndexHtml(html: string) {
+            return html
+              .replace(/<html[^>]*>/i, '<html lang="zh-CN" translate="no" class="notranslate">')
+              .replace(/<head>/i, '<head>\n    <title translate="no">呆毛 · 2026机场推荐与科学上网指南</title>\n    <meta name="google" content="notranslate">\n    <meta name="googlebot" content="notranslate">\n    <meta http-equiv="Content-Language" content="zh-CN">')
+          },
+        },
+      ],
+      resolve: {
+        alias: {
+          '@theme/Home/VPHomeFeature.vue': homeFeatureComponent,
+          '@theme/Blog/VPBlog.vue': blogHeadingComponent,
+          '@theme/Nav/VPNavBarTitle.vue': navBarTitleComponent,
+        },
+      },
+      build: {
+        modulePreload: false,
+      },
+    }
+  })
+})
