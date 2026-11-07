@@ -24,6 +24,7 @@ export default defineUserConfig({
     ['meta', { httpEquiv: 'Content-Language', content: 'zh-CN' }],
     ['meta', { name: 'author', content: '呆毛' }],
     ['meta', { name: 'theme-color', content: '#141518' }],
+    ['meta', { name: 'msvalidate.01', content: '8BEA8052606A0C15AACD9FF35D7E6180' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg?v=2' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png?v=2' }],
     ['link', { rel: 'shortcut icon', href: '/favicon.ico?v=2' }],
