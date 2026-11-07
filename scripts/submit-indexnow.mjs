@@ -7,7 +7,7 @@ import path from 'node:path'
  */
 
 const HOST = 'daimao.blog'
-const KEY = '2122c8ef691d4a43819c53b1109a0731'
+const KEY = '7df39dd02c6247a58511a281bb874f6a'
 const SITEMAP_URL = `https://${HOST}/sitemap.xml`
 
 async function getUrlList() {
