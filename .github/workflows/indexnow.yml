@@ -172,7 +172,7 @@ jobs:
 
       - name: Submit to IndexNow
         env:
-          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY || '7ec54bed5e684bee9e50ea059b0e5538' }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY || '2122c8ef691d4a43819c53b1109a0731' }}
         run: |
           if [ -z "$INDEXNOW_KEY" ]; then
             echo "::notice::INDEXNOW_KEY secret is not configured in repository secrets. Skipping submission."
