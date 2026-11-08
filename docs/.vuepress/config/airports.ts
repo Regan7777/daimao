@@ -66,7 +66,7 @@ export interface AirportPerformanceSnapshot {
 
 export const testingPolicyEffectiveDate = '2026-08-18'
 export const historicalTestingNotice = '旧测速截图、性能数值与结论已从公开资料移除；现有资料仅用于套餐、客户端与风险核对'
-export const mainRecommendationNames = ['神行加速', '大佬云', '榴莲云', '云界线', '闪电鼠', '环球梯'] as const
+export const mainRecommendationNames = ['神行加速', '大佬云', '榴莲云', '云界线', '闪电鼠', '环球梯', '光速云'] as const
 
 export const airportData: AirportData[] = [
   {
@@ -211,8 +211,8 @@ export const airportData: AirportData[] = [
       },
       {
         "name": "云界线官网邀请入口",
-        "url": "https://fugui0077.yunjiexianaff.com/#/?code=qA3LF6hW",
-        "checkedAt": "2026-11-07"
+        "url": "https://fugui0077.yunjiexianaff.com/#/?code=FVkiFyAx",
+        "checkedAt": "2026-11-08"
       }
     ]
   },
@@ -603,6 +603,55 @@ export const airportData: AirportData[] = [
         "checkedAt": "2026-11-07"
       }
     ]
+  },
+  {
+    "name": "光速云",
+    "path": "/posts/guangsuyun-review-2026/",
+    "image": "/shouye.png",
+    "price": 25,
+    "priceText": "25元/月",
+    "traffic": "168GB/月",
+    "trial": false,
+    "noExpiry": true,
+    "dedicatedClient": true,
+    "universalSubscription": false,
+    "scenarios": [
+      "newbie"
+    ],
+    "status": "资料已核对",
+    "risk": "不支持免费试用；严禁私自拉取订阅导入第三方客户端（违者封号）；退款待核实；年付轻量B版与永久C套餐不享额外折扣",
+    "summary": "光速云主打全IPLC/IEPL物理专线与单节点最高2.5Gbps峰值速率，晚高峰全节点x1倍率且不限并发设备。极速A版月付25元168GB（年付179元折合14.92元/月），另有99元/年69GB/月轻量B版专属年付包。此外配备致敬斯诺克147元247GB永久不过期不限时包。全平台提供Windows、Android、Mac专属自研客户端与iOS Nextin（识别码gsy）。官方公告严禁拉取订阅导入第三方客户端，违者封号；不支持免费试用与退款。",
+    "informationSources": [
+      {
+        "name": "光速云试用与订阅规则（人工补充）",
+        "url": "/posts/guangsuyun-review-2026/",
+        "checkedAt": "2026-11-08",
+        "link": false
+      },
+      {
+        "name": "光速云官网套餐页",
+        "url": "https://aoprh.gasyuztt.xyz/#/plans",
+        "checkedAt": "2026-11-08",
+        "link": false
+      },
+      {
+        "name": "光速云自研客户端知识库",
+        "url": "https://aoprh.gasyuztt.xyz/#/knowledge",
+        "checkedAt": "2026-11-08",
+        "link": false
+      },
+      {
+        "name": "光速云仪表盘公告",
+        "url": "https://aoprh.gasyuztt.xyz/#/dashboard",
+        "checkedAt": "2026-11-08",
+        "link": false
+      },
+      {
+        "name": "光速云官网邀请入口",
+        "url": "https://j98j.gsyvipaff.com/#/?code=9506F5Sq",
+        "checkedAt": "2026-11-08"
+      }
+    ]
   }
 ] as unknown as AirportData[]
 
@@ -615,7 +664,7 @@ export const visibleAirportData = airportData.filter(isVisibleAirport)
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.
-export const airportDataLastModified = '2026-11-07'
+export const airportDataLastModified = '2026-11-08'
 
 export const getAirportPriceMetrics = (airports: readonly AirportData[]) => {
   const visible = airports.filter(isVisibleAirport)

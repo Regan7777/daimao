@@ -29,6 +29,7 @@ async function getUrlList() {
   if (sitemapXml) {
     const matches = [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)]
     const list = matches.map(m => m[1].trim()).filter(url => url.startsWith(`https://${HOST}`))
+    list.push(`https://${HOST}/posts/guangsuyun-review-2026/`)
     if (list.length > 0) return [...new Set(list)]
   }
 
@@ -38,6 +39,7 @@ async function getUrlList() {
     const localXml = fs.readFileSync(distSitemap, 'utf-8')
     const matches = [...localXml.matchAll(/<loc>([^<]+)<\/loc>/g)]
     const list = matches.map(m => m[1].trim()).filter(url => url.startsWith(`https://${HOST}`))
+    list.push(`https://${HOST}/posts/guangsuyun-review-2026/`)
     if (list.length > 0) return [...new Set(list)]
   }
 

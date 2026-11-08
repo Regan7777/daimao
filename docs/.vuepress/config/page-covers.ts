@@ -19,6 +19,7 @@ export const pageCovers: Record<string, string> = {
   '/posts/feiv-review-2026/': '/covers/posts-feiv-review-2026.png',
   '/posts/flclash-guide-2026/': '/covers/posts-flclash-guide-2026.png',
   '/posts/google-youtube-github-gmail-not-working/': '/covers/posts-google-youtube-github-gmail-not-working.png',
+  '/posts/guangsuyun-review-2026/': '/covers/posts-guangsuyun-review-2026.png',
   '/posts/hiddify-guide-2026/': '/covers/posts-hiddify-guide-2026.png',
   '/posts/huanqiuti-review-2026/': '/covers/posts-huanqiuti-review-2026.png',
   '/posts/iplc-iepl-bgp-relay-direct-guide/': '/covers/posts-iplc-iepl-bgp-relay-direct-guide.png',

@@ -24,7 +24,7 @@ export const affiliateProviders = [
   {
     slug: 'yunjiexian',
     name: '云界线',
-    target: 'https://fugui0077.yunjiexianaff.com/#/?code=qA3LF6hW',
+    target: 'https://fugui0077.yunjiexianaff.com/#/?code=FVkiFyAx',
     description: '云界线官网注册与购买入口',
   },
   {
@@ -68,5 +68,11 @@ export const affiliateProviders = [
     name: '快狸',
     target: 'https://fanxiaobin.kuailiaff.com/#/?code=K0WKmH8h',
     description: '快狸官网注册与购买入口',
+  },
+  {
+    slug: 'guangsuyun',
+    name: '光速云',
+    target: 'https://j98j.gsyvipaff.com/#/?code=9506F5Sq',
+    description: '光速云官网注册与购买入口',
   },
 ]

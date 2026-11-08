@@ -58,7 +58,7 @@ const definitions = {
     pagePath: '/posts/jichang-heji/', sourceFile: 'docs/机场推荐/机场合集.md',
     heading: '## 机场价格总表', sectionLinks: true,
     select: (airports) => selectNames(airports, [
-      '神行加速', '榴莲云', '云界线', '闪电鼠', '环球梯', '拼好连', '大佬云', '边缘节点', '快狸', '飞V', '灵动云',
+      '神行加速', '榴莲云', '云界线', '闪电鼠', '环球梯', '拼好连', '大佬云', '边缘节点', '快狸', '飞V', '灵动云', '光速云',
     ], () => true, true),
   },
   cheap: {

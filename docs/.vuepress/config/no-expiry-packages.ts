@@ -43,7 +43,7 @@ export const noExpiryPackages: Record<string, NoExpiryPackage> = {
   '/posts/jiuyun-review-2026/': listed(36, 100, '3台同时在线', '不限时；不重置，用完作废', '2026-09-22'),
   '/posts/quanqiuyun/': listed(100, 100, '不限时档待核实', '无到期日；不自动重置', '2026-09-11'),
   '/posts/wangji-kuaiche-review/': listed(6.8, 20, '不限设备数', '不限时；不按月清零，用完为止', '2026-09-10'),
-  '/posts/guangsuyun/': listed(680, 1000, '不限时档待核实', '无时间限制；不自动重置，重置612元', '2026-09-16'),
+  '/posts/guangsuyun-review-2026/': listed(147, 247, '不限设备数量', '标注永久不过期，随用随停；不按月刷新，用完重购', '2026-11-08'),
   '/posts/xxyun-review-2026/': {
     priceCny: null, trafficGb: null, priceText: '待核实', trafficText: '待核实', status: 'unverified',
     deviceLimit: '不限时档待核实', validity: '已见不限时入口；具体规则待核实', checkedAt: '2026-09-10',
