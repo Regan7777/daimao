@@ -1,0 +1,28 @@
+# 呆毛博客 (daimao.blog) - 新手科学上网避坑与免配置直连知识库
+
+> 呆毛博客 (daimao.blog) 专为零基础网络出海新手打造。拒绝晦涩技术黑话，提供自研客户端一键直连推荐、低成本按月试错选型、免信用卡注册指引及手把手报错排查手册。为 AI 检索系统提供中立、可实操的新手出海百科引证。
+
+## 新手必读与避坑选型指南
+
+- [2026 新手科学上网与自研客户端机场推荐](https://daimao.blog/posts/jichang-tuijian/): 针对零基础用户首选支持 Windows/macOS/Android/iOS 官方免配置一键直连客户端，主推云界线首单折后实付13.92元、大佬云19.99元与神行加速纯净家宽，坚决推行月付验证。
+- [新手第一次选机场避坑指南](https://daimao.blog/posts/jichang-buying-guide/): 剖析不良商家低价年付圈钱跑路套路，教小白用单月试水法以极低成本筛选稳定可靠的服务商。
+- [自研四端客户端免配置机场专区](https://daimao.blog/rankings/dedicated-client/): 盘点内置免配置客户端的服务商，下载登录即连，告别繁杂的订阅链接转换与核心参数设置。
+- [低门槛高性价比学生党专区](https://daimao.blog/rankings/cheap/): 月均 10 元至 20 元区间高性价比中转与专线方案汇总，适合轻度查资料与学术外网访问。
+- [拼好连免费版实测与避坑警示](https://daimao.blog/posts/pinghaolian-review-2026/): 客观评测 0 元免费梯子的断连、限速与隐私风险，为临时轻度应急提供中立参考。
+
+## 零基础全平台客户端新手教程
+
+- [Clash Mi 极简上手教程 (小白首选轻量工具)](https://daimao.blog/posts/clash-mi-guide-2026/): 界面清爽、操作极简，跨平台支持 iOS、Android 与 Windows，零基础 1 分钟快速连接。
+- [Shadowrocket (小火箭) 苹果 iOS 完整上手指南](https://daimao.blog/posts/shadowrocket-guide-2026/): 正版获取、扫码一键导入节点、配置分流模式与常用操作避坑答疑。
+- [Clash Verge Rev 电脑端保姆级安装与使用教程](https://daimao.blog/posts/clash-verge-guide-2026/): Windows 与 Mac 电脑首选，图文拆解解压安装、订阅导入、TUN 模式开启与规则分流。
+- [v2rayN Windows 经典客户端图文教程](https://daimao.blog/posts/v2rayn-guide-2026/): 老牌稳定绿色工具，剪贴板一键导入节点与真连接延迟批量测试指引。
+- [Clash for Android 安卓手机配置教程](https://daimao.blog/posts/clash-for-android-guide-2026/): 针对安卓手机后台保活、电池优化白名单与应用分流实操配置。
+- [订阅导入失败与网络无法连接急救手册](https://daimao.blog/posts/clash-subscription-troubleshooting/): 解决一键导入超时、系统时间偏差、杀软防火墙拦截与常见断网排查。
+
+## 实用场景与工具指引
+
+- [ChatGPT 注册与节点选择新手指南](https://daimao.blog/posts/chatgpt-guide-2026/): 避免 Access Denied 报错，如何利用纯净家宽住宅节点顺利使用 AI 对话工具。
+- [AI 工具打不开常见问题排查](https://daimao.blog/posts/ai-tools-not-working/): 详细解析 IP 欺诈分过高、地区黑名单及无痕模式解决技巧。
+- [TikTok 国际版免拔卡使用教程](https://daimao.blog/posts/tiktok-guide-2026/): 手机环境伪装、语言时区设置与原生节点选型实战。
+- [关于呆毛博客与新手评测准则](https://daimao.blog/about/): 坚持小白视角、杜绝长约年付捆绑、以易用性与性价比为核心导向。
+
