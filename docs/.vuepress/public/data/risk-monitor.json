@@ -2,18 +2,18 @@
   "site": "呆毛",
   "url": "https://daimao.blog",
   "lastReviewed": "2026-08-19",
-  "lastModified": "2026-11-07",
+  "lastModified": "2026-11-08",
   "metrics": {
-    "count": 11,
+    "count": 12,
     "trialCount": 1,
-    "noExpiryCount": 6,
+    "noExpiryCount": 7,
     "noExpiryUnverifiedCount": 0,
-    "dedicatedClientCount": 11,
+    "dedicatedClientCount": 12,
     "universalSubscriptionCount": 5,
     "cheapUnderTenCount": 1,
-    "averagePrice": 14.5,
+    "averagePrice": 15.4,
     "regularCheapUnderTenCount": 1,
-    "regularAveragePrice": 14.5,
+    "regularAveragePrice": 15.4,
     "priceBasis": {
       "entry": "首次入门周期参考价，包含不可续费的新人优惠；不是所有机场的实际首购结算价",
       "regular": "常规持续套餐周期参考价，优先使用明确记录的常规价，否则沿用当前周期价格；不是逐家验证的续费成交价"
@@ -115,6 +115,12 @@
       "status": "资料已核对",
       "risk": "不支持免费试用与通用订阅；全套餐不接受退款；优惠码需加入官方Telegram群获取",
       "url": "https://daimao.blog/posts/lingdongyun-review-2026/"
+    },
+    {
+      "name": "光速云",
+      "status": "资料已核对",
+      "risk": "不支持免费试用；严禁私自拉取订阅导入第三方客户端（违者封号）；退款待核实；年付轻量B版与永久C套餐不享额外折扣",
+      "url": "https://daimao.blog/posts/guangsuyun-review-2026/"
     }
   ]
 }

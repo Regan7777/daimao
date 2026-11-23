@@ -1,8 +1,8 @@
-﻿{
+{
   "site": "呆毛",
   "url": "https://daimao.blog",
   "lastReviewed": "2026-08-19",
-  "lastModified": "2026-11-07",
+  "lastModified": "2026-11-08",
   "testingPolicy": {
     "effectiveDate": "2026-08-18",
     "yinliConductsCurrentTests": false,
@@ -10,16 +10,16 @@
     "contributedRecordsNotice": "用户投稿单列来源、测试日期和环境，不代表 呆毛 自行测试或全部节点的当前表现"
   },
   "metrics": {
-    "count": 11,
+    "count": 12,
     "trialCount": 1,
-    "noExpiryCount": 6,
+    "noExpiryCount": 7,
     "noExpiryUnverifiedCount": 0,
-    "dedicatedClientCount": 11,
+    "dedicatedClientCount": 12,
     "universalSubscriptionCount": 5,
     "cheapUnderTenCount": 1,
-    "averagePrice": 14.5,
+    "averagePrice": 15.4,
     "regularCheapUnderTenCount": 1,
-    "regularAveragePrice": 14.5,
+    "regularAveragePrice": 15.4,
     "priceBasis": {
       "entry": "首次入门周期参考价，包含不可续费的新人优惠；不是所有机场的实际首购结算价",
       "regular": "常规持续套餐周期参考价，优先使用明确记录的常规价，否则沿用当前周期价格；不是逐家验证的续费成交价"
@@ -184,8 +184,8 @@
         },
         {
           "name": "云界线官网邀请入口",
-          "url": "https://fugui0077.yunjiexianaff.com/#/?code=qA3LF6hW",
-          "checkedAt": "2026-11-07"
+          "url": "https://fugui0077.yunjiexianaff.com/#/?code=FVkiFyAx",
+          "checkedAt": "2026-11-08"
         }
       ],
       "noExpiryPackage": {
@@ -655,6 +655,70 @@
         "billing": "one-off"
       },
       "url": "https://daimao.blog/posts/lingdongyun-review-2026/"
+    },
+    {
+      "name": "光速云",
+      "path": "/posts/guangsuyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "168GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "newbie"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；严禁私自拉取订阅导入第三方客户端（违者封号）；退款待核实；年付轻量B版与永久C套餐不享额外折扣",
+      "summary": "光速云主打全IPLC/IEPL物理专线与单节点最高2.5Gbps峰值速率，晚高峰全节点x1倍率且不限并发设备。极速A版月付25元168GB（年付179元折合14.92元/月），另有99元/年69GB/月轻量B版专属年付包。此外配备致敬斯诺克147元247GB永久不过期不限时包。全平台提供Windows、Android、Mac专属自研客户端与iOS Nextin（识别码gsy）。官方公告严禁拉取订阅导入第三方客户端，违者封号；不支持免费试用与退款。",
+      "informationSources": [
+        {
+          "name": "光速云试用与订阅规则（人工补充）",
+          "url": "/posts/guangsuyun-review-2026/",
+          "checkedAt": "2026-11-08",
+          "link": false
+        },
+        {
+          "name": "光速云官网套餐页",
+          "url": "https://aoprh.gasyuztt.xyz/#/plans",
+          "checkedAt": "2026-11-08",
+          "link": false
+        },
+        {
+          "name": "光速云自研客户端知识库",
+          "url": "https://aoprh.gasyuztt.xyz/#/knowledge",
+          "checkedAt": "2026-11-08",
+          "link": false
+        },
+        {
+          "name": "光速云仪表盘公告",
+          "url": "https://aoprh.gasyuztt.xyz/#/dashboard",
+          "checkedAt": "2026-11-08",
+          "link": false
+        },
+        {
+          "name": "光速云官网邀请入口",
+          "url": "https://j98j.gsyvipaff.com/#/?code=9506F5Sq",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 147,
+        "trafficGb": 247,
+        "priceText": "147元",
+        "trafficText": "247GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数量",
+        "validity": "标注永久不过期，随用随停；不按月刷新，用完重购",
+        "checkedAt": "2026-11-08",
+        "unitPriceCnyPerGb": 0.595,
+        "sourcePage": "/posts/guangsuyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://daimao.blog/posts/guangsuyun-review-2026/"
     }
   ]
 }

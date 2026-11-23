@@ -1,6 +1,6 @@
 # 呆毛 机场风险监测
 
-Data updated: 2026-11-07; last full review: 2026-08-19
+Data updated: 2026-11-08; last full review: 2026-08-19
 
 | 机场 | 状态 | 风险提示 | 链接 |
 | --- | --- | --- | --- |
@@ -19,3 +19,4 @@ Data updated: 2026-11-07; last full review: 2026-08-19
 | 快狸 | 资料已核对 | 官方公告遇恶意攻击抢修；不支持免费试用；夜狸季付高于连续月付；退款待核实 | [查看](https://daimao.blog/posts/kuaili-review-2026/) |
 | 飞V | 资料已核对 | 不支持免费试用与通用订阅；全套餐不接受退款；新客8折码fly20不适用买断包 | [查看](https://daimao.blog/posts/feiv-review-2026/) |
 | 灵动云 | 资料已核对 | 不支持免费试用与通用订阅；全套餐不接受退款；优惠码需加入官方Telegram群获取 | [查看](https://daimao.blog/posts/lingdongyun-review-2026/) |
+| 光速云 | 资料已核对 | 不支持免费试用；严禁私自拉取订阅导入第三方客户端（违者封号）；退款待核实；年付轻量B版与永久C套餐不享额外折扣 | [查看](https://daimao.blog/posts/guangsuyun-review-2026/) |
